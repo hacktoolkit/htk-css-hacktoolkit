@@ -1,58 +1,84 @@
+//https://en.wikipedia.org/wiki/Primary_color
+/* basic and primary colors */
 @black: #000000;
 @white: #ffffff;
-
 @red: #ff0000;
 @green: #00ff00;
 @blue: #0000ff;
 @orange: rgb(255, 165, 0);
+@aqua: #00aaff;
 
+/* grays */
+// custom grays
+@dark-charcoal: #202020;
 @dark-gray: #333333;
 @dark-slate-gray: #4a4a4a;
 @medium-gray: #aaaaaa;
-@light-gray: #cccccc;
+@light-gray: #c3c3c3;
+@light-gray-2: #cbcbcb;
+@light-gray-3: #cccccc;
 @lighter-gray: #eeeeee;
 
-@okay-green: #00cc00;
+// generic grays
+// https://en.wikipedia.org/wiki/Shades_of_gray
+@gray-0: @black;
+@gray-5: lighten(@black, 5%);
+@gray-10: lighten(@black, 10%);
+@gray-15: lighten(@black, 15%);
+@gray-20: lighten(@black, 20%);
+@gray-25: lighten(@black, 25%);
+@gray-30: lighten(@black, 30%);
+@gray-35: lighten(@black, 35%);
+@gray-40: lighten(@black, 40%);
+@gray-45: lighten(@black, 45%);
+@gray-50: lighten(@black, 50%);
+@gray-55: lighten(@black, 55%);
+@gray-60: lighten(@black, 60%);
+@gray-65: lighten(@black, 65%);
+@gray-70: lighten(@black, 70%);
+@gray-75: lighten(@black, 75%);
+@gray-80: lighten(@black, 80%);
+@gray-85: lighten(@black, 85%);
+@gray-90: lighten(@black, 90%);
+@gray-95: lighten(@black, 95%);
+@gray-100: @white;
 
+/* PureCSS colors http://purecss.io/ */
 @pure-menu-label-hover-bg: #5171eb;
 @pure-menu-label-hover-bg-gradient-start: rgba(81, 113, 235, 1);
 @pure-menu-label-hover-bg-gradient-end: rgba(26, 67, 244, 1);
 @pure-menu-label-hover-border-bottom: #0d36e7;
 @pure-menu-label-hover-border-top: #4767ea;
 
-@button-blue: #0078e7;
-@button-green: rgb(76, 201, 71); /* this is a green */
-@button-maroon: rgb(202, 60, 60); /* this is a maroon */
-@button-light-blue: rgb(95, 198, 218); /* this is a light blue */
+/* custom colors */
+@color-okay-green: #00cc00;
+@color-button-blue: #0078e7;
+@color-button-green: rgb(76, 201, 71); /* this is a green */
+@color-button-maroon: rgb(202, 60, 60); /* this is a maroon */
+@color-button-light-blue: rgb(95, 198, 218); /* this is a light blue */
 
-@facebook-blue: #4c66a4;
-@twitter-blue: #2c77ba;
+/* brand colors */
+@color-facebook-blue: #4c66a4;
+@color-twitter-blue: #2c77ba;
 
 /* http://flatuicolors.com/ */
-@flatui-turquoise: #1abc9c;
-@flatui-green-sea: #16a085;
-@flatui-sun-flower: #f1c40f;
-@flatui-orange: #f39c12;
-@flatui-emerald: #2ecc71;
-@flatui-nephritis: #27ae60;
-@flatui-carrot: #e67e22;
-@flatui-pumpkin: #d35400;
-@flatui-peter-river: #3498db;
-@flatui-belize-hole: #2980b9;
-@flatui-alizarin: #e74c3c;
-@flatui-pomegranate: #c0392b;
-@flatui-amethyst: #9b59b6;
-@flatui-wisteria: #8e44ad;
-@flatui-clouds: #ecf0f1;
-@flatui-silver: #bdc3c7;
-@flatui-wet-asphalt: #34495e;
-@flatui-midnight-blue: #2c3e50;
-@flatui-concrete: #95a5a6;
-@flatui-asbestos: #7f8c8d;
-
-.bg-color(@color) {
-    background-color: @color;
-}
-.fg-color(@color) {
-    color: @color;
-}
+@color-flatui-turquoise: #1abc9c;
+@color-flatui-green-sea: #16a085;
+@color-flatui-sun-flower: #f1c40f;
+@color-flatui-orange: #f39c12;
+@color-flatui-emerald: #2ecc71;
+@color-flatui-nephritis: #27ae60;
+@color-flatui-carrot: #e67e22;
+@color-flatui-pumpkin: #d35400;
+@color-flatui-peter-river: #3498db;
+@color-flatui-belize-hole: #2980b9;
+@color-flatui-alizarin: #e74c3c;
+@color-flatui-pomegranate: #c0392b;
+@color-flatui-amethyst: #9b59b6;
+@color-flatui-wisteria: #8e44ad;
+@color-flatui-clouds: #ecf0f1;
+@color-flatui-silver: #bdc3c7;
+@color-flatui-wet-asphalt: #34495e;
+@color-flatui-midnight-blue: #2c3e50;
+@color-flatui-concrete: #95a5a6;
+@color-flatui-asbestos: #7f8c8d;

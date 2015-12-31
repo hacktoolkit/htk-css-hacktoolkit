@@ -1,0 +1,53 @@
+@import "_imports/colors.less";
+@import "_imports/mixins.less";
+
+.cpq {
+    h1 {
+        font-size: 3em;
+    }
+    .cpq-company {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .cpq-heading {
+        text-transform: uppercase;
+    }
+    .cpq-contact {
+        .fa {
+            margin-right: 5px;
+        }
+    }
+    .cpq-summary {
+        float: right;
+    }
+    .cpq-items {
+        width: 100%;
+        .cpq-item-description {
+            width: 60%;
+        }
+        .cpq-items-unit-cost,
+        .cpq-items-quantity,
+        .cpq-items-amount,
+        {
+            width: (40% / 3);
+        }
+        .cpq-item-unit-cost,
+        .cpq-item-quantity,
+        .cpq-item-amount {
+            text-align: right;
+        }
+        .cpq-total {
+            text-align: right;
+        }
+        tfoot {
+            border-top: 1px solid;
+        }
+    }
+    .qrcode-container {
+        width: 100%;
+        img.qrcode {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

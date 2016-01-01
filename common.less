@@ -1,5 +1,6 @@
 @import "_imports/mixins.less";
 @import "_imports/colors.less";
+@import "_imports/vars.less";
 
 /* dimensions and borders */
 .rounded, .rounded-10, .rounded-medium { .rounded-base(1); }
@@ -200,8 +201,29 @@
     .no-break { page-break-inside: avoid; }
     .page-break-after { page-break-after: always; }
     .page-break-before { page-break-before: always; }
+
+    .align-left-print { text-align: left; }
+    .align-right-print { text-align: right; }
+    .float-left-print { float: left; }
+    .float-right-print { float: right; }
 }
 
 @media screen {
     .print-only { display: none; }
+}
+
+/* media queries */
+
+@media screen and (min-width: @screen-sm-min) {
+    .align-left-sm { text-align: left; }
+    .align-right-sm { text-align: right; }
+    .float-left-sm { float: left; }
+    .float-right-sm { float: right; }
+}
+
+@media screen and (min-width: @screen-md-min) {
+    .align-left-md { text-align: left; }
+    .align-right-md { text-align: right; }
+    .float-left-md { float: left; }
+    .float-right-md { float: right; }
 }

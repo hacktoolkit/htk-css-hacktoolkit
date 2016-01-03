@@ -87,6 +87,26 @@
     background: linear-gradient(@start-color, @end-color);
 }
 
+/* forms */
+
+.placeholder-color(@color) {
+    /* http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css */
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: @color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: @color;
+        opacity: 1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: @color;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: @color;
+    }
+}
+
 /* color */
 
 .bg-color(@color) {

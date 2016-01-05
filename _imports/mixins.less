@@ -121,3 +121,28 @@
 .voffset(@size) {
     margin-top: @size;
 }
+
+/* animations */
+
+.animate-ellipsis(@ellipsis: ". . .", @duration: 900ms, @full-anim-width: 20px) {
+    //@ellipsis: "\2026"; /* ascii code for the ellipsis character */
+    &:after {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-animation: ellipsis steps(4,end) @duration infinite;
+        animation: ellipsis steps(4,end) @duration infinite;
+        content: @ellipsis;
+        width: 0px;
+    }
+    @keyframes ellipsis {
+        to {
+            width: @full-anim-width;
+        }
+    }
+    @-webkit-keyframes ellipsis {
+        to {
+            width: @full-anim-width;
+        }
+    }
+}

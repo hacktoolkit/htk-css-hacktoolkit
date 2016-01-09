@@ -146,3 +146,46 @@
         }
     }
 }
+
+/* widgets */
+.fa-star-rating(@font-size: 1em;) {
+    @fa-star-o: "\f006";
+    @fa-star: "\f005";
+    cursor: pointer;
+    &:hover {
+        label {
+            &::before {
+                content: @fa-star !important;
+            }
+        }
+    }
+    label {
+        color: @white;
+        font-family: 'FontAwesome';
+        font-size: @font-size;
+        &:first-of-type {
+            display: none;
+        }
+        &::before {
+            content: @fa-star;
+        }
+        &:hover {
+            cursor: pointer;
+            & ~ label {
+                &::before {
+                    content: @fa-star-o !important;
+                }
+            }
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            & ~ label {
+                &::before {
+                    content: @fa-star-o;
+                }
+            }
+        }
+    }
+}

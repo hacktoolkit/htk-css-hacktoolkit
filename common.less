@@ -202,9 +202,9 @@
 /* printing */
 @media print {
     .no-print { display: none; }
-    .no-break { page-break-inside: avoid; }
-    .page-break-after { page-break-after: always; }
-    .page-break-before { page-break-before: always; }
+    .no-break { page-break-inside: avoid; break-inside: avoid; -webkit-region-break-inside: avoid; }
+    .page-break-after { display: block; position: relative; page-break-after: always; break-after: always; -webkit-region-break-after: always; }
+    .page-break-before { display: block; position: relative; page-break-before: always; break-before: always; -webkit-region-break-before: always; }
 
     .align-left-print { text-align: left; }
     .align-right-print { text-align: right; }

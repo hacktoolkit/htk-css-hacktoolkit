@@ -45,6 +45,18 @@
     border-bottom-right-radius: (@border-radius-base * @scale);
 }
 
+.rounded-top-base(@scale, @border-radius-base: @border-radius-base-em) {
+    /* Safari prototype */
+    -webkit-border-top-left-radius: (@border-radius-base * @scale);
+    -webkit-border-top-right-radius: (@border-radius-base * @scale);
+    /* Gecko browsers */
+    -moz-border-top-left-radius: (@border-radius-base * @scale);
+    -moz-border-top-right-radius: (@border-radius-base * @scale);
+    /* Everything else - limited support at the moment */
+    border-top-left-radius: (@border-radius-base * @scale);
+    border-top-right-radius: (@border-radius-base * @scale);
+}
+
 .rounded-bottom-base(@scale, @border-radius-base: @border-radius-base-em) {
     /* Safari prototype */
     -webkit-border-bottom-left-radius: (@border-radius-base * @scale);

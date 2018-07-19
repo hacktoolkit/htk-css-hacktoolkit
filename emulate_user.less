@@ -1,0 +1,67 @@
+.htk-toolbar {
+    bottom: 0;
+    line-height: 1.5em;
+    position: fixed;
+    overflow-y: auto;
+    right: 0;
+    top: 0;
+    width: 200px;
+    z-index: 100000000;
+
+    opacity: 0.9;
+    background-color: #111;
+}
+
+.htk-toolbar-panel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.htk-toolbar-list-item {
+    padding: 10px 10px 5px 25px;
+    border-bottom: 1px solid #222;
+
+    font-size: 12px;
+    color: #fff;
+}
+
+.htk-toolbar-list-item:hover {
+    color: #111;
+    background-color: #ffc;
+}
+
+.htk-toolbar-tab {
+    border: 1px solid #111;
+    bottom: 0;
+    padding: 2px;
+    position: fixed;
+    z-index: 100000000;
+    
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.htk-toolbar-hide {
+  border-bottom: 1px solid #222;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emulate-input {
+  margin-bottom: 8px;
+}
+
+.pulsating-htk-toolbar-tab {
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: #FF4136;  
+    }
+}

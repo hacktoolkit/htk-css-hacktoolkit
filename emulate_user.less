@@ -10,18 +10,33 @@
 
     opacity: 0.9;
     background-color: #111;
+
+    input {
+        margin-bottom: 8px;
+
+        color: black;
+        padding: 2px 8px;
+    }
+
+    button {
+        color: black;
+        border-radius: 2px;
+        padding: 2px 8px;
+    }
+
     .htk-toolbar-hide {
         border-bottom: 1px solid #222;
+
+        cursor: pointer;
         font-size: 16px;
         font-weight: bold;
     }
-    .emulate-input {
-        margin-bottom: 8px;
-    }
+
     .htk-toolbar-panel {
         margin: 0;
         padding: 0;
         list-style: none;
+
         .htk-toolbar-list-item {
             padding: 10px 10px 5px 25px;
             border-bottom: 1px solid #222;
@@ -29,6 +44,7 @@
             font-size: 12px;
             color: #fff;
         }
+
         .htk-toolbar-list-item:hover {
             color: #111;
             background-color: #ffc;
@@ -44,8 +60,14 @@
     z-index: 100000000;
     
     background-color: #fff;
+    color: black;
     cursor: pointer;
+    font-weight: bold;
     opacity: 0.75;
+
+    &:hover {
+        color: black;
+    }
 
     &.pulsating-htk-toolbar-tab {
         animation: pulse 5s infinite;

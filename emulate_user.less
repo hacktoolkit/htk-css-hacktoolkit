@@ -1,32 +1,33 @@
+@import "_imports/colors.less";
+@import "_imports/fonts.less";
+
 .htk-toolbar {
     bottom: 0;
     line-height: 1.5em;
-    position: fixed;
     overflow-y: auto;
+    position: fixed;
     right: 0;
     top: 0;
     width: 200px;
     z-index: 100000000;
 
     opacity: 0.9;
-    background-color: #111;
-
+    background-color: @dark-charcoal;
     input {
         margin-bottom: 8px;
 
-        color: black;
+        color: @black;
         padding: 2px 8px;
     }
 
     button {
-        color: black;
+        color: @black;
         border-radius: 2px;
         padding: 2px 8px;
     }
 
     .htk-toolbar-hide {
-        border-bottom: 1px solid #222;
-
+        border-bottom: 1px solid @dark-charcoal;
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
@@ -35,40 +36,39 @@
     .htk-toolbar-panel {
         margin: 0;
         padding: 0;
-        list-style: none;
 
+        list-style: none;
         .htk-toolbar-list-item {
             padding: 10px 10px 5px 25px;
-            border-bottom: 1px solid #222;
+            border-bottom: 1px solid @dark-charcoal;
         
             font-size: 12px;
             color: #fff;
         }
 
         .htk-toolbar-list-item:hover {
-            color: #111;
-            background-color: #ffc;
+            color: @dark-charcoal;
+            background-color: @list-item-background-hover;
         }
     }    
 }
 
 .htk-toolbar-tab {
-    border: 1px solid #111;
     bottom: 0;
     padding: 5px 5px 0px 5px;
     position: fixed;
     z-index: 100000000;
     
-    background-color: black;
+    background-color: @black;
+    border: 1px solid @dark-charcoal;
     color: white;
     cursor: pointer;
-    font-family: Courier New;
+    font-family: @font-monospace-courier-new;
     font-weight: 500;
     opacity: 0.75;
     .rounded-top-base(.8);
-
     &:hover {
-        color: #b9b8b8;
+        color: @color-flatui-silver;
     }
 
     &.pulsating-htk-toolbar-tab {
@@ -77,7 +77,7 @@
     
     @keyframes pulse {
         0% {
-            background-color: black;
+            background-color: @black;
         }
         100% {
             background-color: #0000ff;

@@ -55,30 +55,32 @@
 .htk-toolbar-tab {
     border: 1px solid #111;
     bottom: 0;
-    padding: 2px;
+    padding: 5px 5px 0px 5px;
     position: fixed;
     z-index: 100000000;
     
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
     cursor: pointer;
-    font-weight: bold;
+    font-family: Courier New;
+    font-weight: 500;
     opacity: 0.75;
+    .rounded-top-base(.8);
 
     &:hover {
-        color: black;
+        color: #b9b8b8;
     }
 
     &.pulsating-htk-toolbar-tab {
-        animation: pulse 5s infinite;
+        animation: pulse 3s infinite alternate;
     }
     
     @keyframes pulse {
         0% {
-            background-color: white;
+            background-color: black;
         }
         100% {
-            background-color: #FF4136;  
+            background-color: #0000ff;
         }
     }
 }

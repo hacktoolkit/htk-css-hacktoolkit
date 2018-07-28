@@ -8,23 +8,11 @@
     position: fixed;
     right: 0;
     top: 0;
-    width: 200px;
+    width: 350px;
     z-index: 100000000;
 
     opacity: 0.9;
     background-color: @dark-charcoal;
-    input {
-        margin-bottom: 8px;
-
-        color: @black;
-        padding: 2px 8px;
-    }
-
-    button {
-        color: @black;
-        border-radius: 2px;
-        padding: 2px 8px;
-    }
 
     .htk-toolbar-hide {
         border-bottom: 1px solid @dark-charcoal;
@@ -34,6 +22,7 @@
     }
 
     .htk-toolbar-panel {
+        @list-item-background-hover: #ffc;
         margin: 0;
         padding: 0;
 
@@ -50,7 +39,7 @@
             color: @dark-charcoal;
             background-color: @list-item-background-hover;
         }
-    }    
+    }
 }
 
 .htk-toolbar-tab {
@@ -61,14 +50,15 @@
     
     background-color: @black;
     border: 1px solid @dark-charcoal;
-    color: @white;
+    color: @white !important;
     cursor: pointer;
     font-family: @font-monospace-courier-new;
     font-weight: 500;
     opacity: 0.75;
     .rounded-top-base(.8);
+
     &:hover {
-        color: @color-flatui-silver;
+        color: @color-flatui-silver !important;
     }
 
     &.pulsating-htk-toolbar-tab {

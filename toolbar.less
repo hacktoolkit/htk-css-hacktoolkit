@@ -3,6 +3,10 @@
 @import "_imports/mixins.less";
 
 .htk-toolbar {
+    // These files are required to use any files from bootstrap
+    @import "./vendor/bootstrap/less/_functions";
+    @import "./vendor/bootstrap/less/_variables";
+    @import "./vendor/bootstrap/less/_mixins";
     bottom: 0;
     line-height: 1.5em;
     overflow-y: auto;
@@ -14,7 +18,15 @@
 
     opacity: 0.9;
     background-color: @dark-charcoal;
-
+    .emulate-user-title {
+        color: inherit;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 8px 0;
+    }
+      
     .htk-toolbar-hide {
         border-bottom: 1px solid @dark-charcoal;
         cursor: pointer;
@@ -23,6 +35,10 @@
     }
 
     .htk-toolbar-panel {
+        @import "./vendor/bootstrap/less/_input-group";
+        @import "./vendor/bootstrap/less/_button-group";
+        @import "./vendor/bootstrap/less/_buttons";
+        @import "./vendor/bootstrap/less/_forms";
         @color-list-item-bg-hover: #ffc;
         margin: 0;
         padding: 0;
